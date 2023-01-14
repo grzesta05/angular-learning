@@ -1,0 +1,6 @@
+<div class="main--container">
+  <div class="magazine" *ngFor="let record of data;index as i" (click)="click(i)">
+    <img [src]="'http://atarionline.pl/biblioteka/czasopisma/img/' + record.src.text" />
+    <p>{{record.klik.text}}</p>
+  </div>
+</div>

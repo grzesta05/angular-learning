@@ -1,0 +1,10 @@
+<div class="main--container">
+  <button class="fuck" (click)="fuckGoBack()">Go back</button>
+  <button *ngFor="let year of yearsData; index as i" (click)="displayNumbers(year)"
+    [class]="clicked == i ? 'clicked' : ''">
+    {{year}}
+  </button>
+  <button (click)="displayNumbers('all')" [class]="clicked == yearsData.length+1 ? 'clicked' : ''">
+    All
+  </button>
+</div>

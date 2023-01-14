@@ -1,0 +1,31 @@
+.magazine{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 1%;
+  padding: 1%;
+  text-align: center;
+  align-items: center;
+  gap: 1%;
+  background: var(--main);
+  height: 15vh;
+  border-radius: 50px;
+  width: 75%;
+  transition: 0.5s;
+}
+.magazine>img{
+  border-radius: 20px;
+  width: 45%;
+  max-height: 14vh;
+  min-width: 300px;
+}
+.magazine>p{
+  color: var(--bg-color);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.magazine:hover{
+  transform: translate(5%,0);
+  transition: 0.5s;
+}

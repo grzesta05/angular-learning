@@ -1,0 +1,28 @@
+.main--container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button{
+  background-color: transparent;
+  margin:1%;
+  font-size: 2rem;
+  color: var(--main);
+  font-weight: 900;
+  border: 5px solid var(--main);
+  border-radius: 25px;
+  width: 10%;
+  min-width: 200px;
+  transition: .2s all;
+}
+.clicked{
+  background-color: var(--main);
+  color: var(--bg-color);
+  transition: .2s all;
+}
+button:hover{
+  background-color: var(--main);
+  color: var(--bg-color);
+  transition: .2s all;
+}

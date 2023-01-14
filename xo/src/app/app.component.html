@@ -1,0 +1,9 @@
+<div>
+  <h1>{{title}}</h1>
+  <div class="board">
+    <div class="row" *ngFor="let row of arr; first as f; last as l; index as i">
+      <div *ngFor="let tile of row; index as r">
+        <button [disabled]="tile.clicked" class="tile" (click)="click($event,i,r)">{{tile.value}}</button>
+      </div>
+    </div>
+  </div>

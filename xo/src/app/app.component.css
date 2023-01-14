@@ -1,0 +1,30 @@
+h1{
+  margin: auto;
+  width: fit-content;
+  font-size: 4rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2vw;
+
+}
+.tile{
+  height: 10vw;
+  width: 10vw;
+  background-color: transparent;
+  border: 3px dotted black;
+  border-radius: 10px;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5vw
+}
+.board{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 31.5vw;
+  gap: 0.5vw
+}

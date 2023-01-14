@@ -1,0 +1,57 @@
+.number{
+  width: 75%;
+  margin: auto;
+  margin-bottom: 1%;
+  color:var(--bg-color);
+  background: var(--main);
+  padding: 2%;
+  border-radius: 50px;
+
+}
+.number--main--container{
+
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.number--details{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h2{
+  font-size: 2rem;
+}
+.number img{
+  border-radius: 25px;
+}
+.number--file {
+  text-decoration: none;
+  width: 90%;
+  padding: 2%;
+  display: block;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--main);
+  border: 5px solid var(--main);
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.number--file:hover{
+  background-color: var(--main);
+  color: var(--bg-color);
+  border: 5px solid var(--bg-color);
+  transition: all .2s;
+}
+.fuck
+{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+

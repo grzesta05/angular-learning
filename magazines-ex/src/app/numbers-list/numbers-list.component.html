@@ -1,0 +1,30 @@
+<div class="main--container">
+  <div class="number" *ngFor="let num of numbersList">
+
+    <h2 *ngIf="checkIfEmpty(num); else numberID">{{num["attr"]["brak"]}}</h2>
+
+    <ng-template #numberID>
+      <div class="number--main--container">
+        <a [href]="getImageLink(num)" target="_blank">
+          <img [alt]="'Okładka ' + getTextProp(num, 'numer')" class="number--img" [src]="getImageLink(num)" />
+        </a>
+        <div class="number--details">
+          <div>
+            <h2>{{getTextProp(num, "nazwa")}} - {{getTextProp(num, "numer")}}</h2>
+            <h3>Wydawca: {{getTextProp(num, "wydawca")}}</h3>
+            <h4>nadesłane przez: {{getTextProp(num, "podeslal")}}, przetworzone przez:
+              {{getTextProp(num, "przetworzenie")}},
+              skan:
+              {{getTextProp(num, "skan")}}
+            </h4>
+            <p>Ilość stron: {{getTextProp(num,"stron")}}
+            </p>
+          </div>
+          <a [href]="getFileLink(num)" target="_blank" class="number--file">Pobierz tutaj</a>
+
+        </div>
+      </div>
+    </ng-template>
+  </div>
+
+</div>

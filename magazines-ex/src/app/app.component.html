@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div class="timer">{{time | date:"dd/MM/yyyy H:mm:ss"}}</div>
+</div>
+<!-- <div class="main-container" *ngIf="input != '666.66' || showMagazines; else dupa">
+  <div class="form">
+    <label for="a">Wpisz zarobki</label>
+    <input id="a" type="password" (keypress)="validateInput($event)" [(ngModel)]="input">
+    EUR
+  </div>
+  <div>Twoje zarobki to: {{input | currency:"EUR":"symbol":"0.0-3"}}</div>
+</div> -->
+<!--
+<ng-template #dupa> -->
+<div class="main-container">
+  <h1>Niezła kasiora!!</h1>
+</div>
+<!-- </ng-template> -->
+<router-outlet></router-outlet>

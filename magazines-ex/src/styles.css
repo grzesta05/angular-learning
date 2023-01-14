@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --main : #7B5E7B;
+  --bg-color: #D1CFE2
+}
+
+body{
+  background-color: var(--bg-color);
+  }
+  *{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  ::selection{
+    background-color: #FF312E;
+  }
+
+  .main--container{
+    width: 50%;
+    margin:auto
+  }
